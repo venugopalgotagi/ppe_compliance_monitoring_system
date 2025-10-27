@@ -3,4 +3,4 @@ scikit-image==0.25.2
 numpy==2.3.4
 ultralytics==8.3.221
 pip-system-certs==5.3
-python-dotenv==1.1.1
+python-dotenv==1.2.1
