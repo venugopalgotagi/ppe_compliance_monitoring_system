@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Predict Image</title>
+</head>
+<body>
+
+<div style="padding:20%;">
+    <form method="post" enctype="multipart/form-data" class="form-horizontal" >
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-primary" name="Upload">
+
+    </form>
+    <p style="text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-stretch: ultra-condensed;">{{predictor_response}}</p>
+</div>
+
+
+
+
+</body>
+</html>
